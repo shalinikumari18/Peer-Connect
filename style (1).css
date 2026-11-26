@@ -1,0 +1,59 @@
+/* ===== GENERAL (applies to every page) ===== */
+* { box-sizing: border-box; }
+body { font-family: Arial, sans-serif; margin: 0; color: #333333; line-height: 1.7; background-color: white; }
+h1, h2 { color: #14213d; }
+h2 { text-align: center; margin: 0 0 8px 0; font-size: 28px; }
+.sub { text-align: center; margin: 0 0 24px 0; color: #667; }
+
+/* ===== HEADER + MENU (same on all pages) ===== */
+header { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: center; background-color: #14213d; padding: 14px 24px; }
+.logo { color: white; font-size: 24px; font-weight: bold; text-decoration: none; letter-spacing: 1px; }
+.logo span { color: #fca311; }
+nav { display: flex; flex-direction: row; flex-wrap: wrap; gap: 16px; }
+nav a { color: white; text-decoration: none; font-weight: bold; }
+nav a:hover { color: #fca311; cursor: pointer; }
+nav a.active { color: #fca311; border-bottom: 2px solid #fca311; }
+
+/* ===== SECTIONS ===== */
+section { padding: 45px 20px; }
+.grey { background-color: #f1f4f9; }
+.wrap { max-width: 900px; margin: 0 auto; }
+.hero { background-color: #2b4c9b; color: white; text-align: center; padding: 70px 20px; }
+.hero h1 { color: white; font-size: 36px; text-shadow: 2px 2px 4px #14213d; margin: 0 0 10px 0; }
+
+/* ===== BUTTONS ===== */
+.btn, button { display: inline-block; background-color: #fca311; color: #14213d; text-decoration: none; font-size: 16px; font-weight: bold; border: none; border-radius: 25px; padding: 11px 26px; margin: 8px 6px; }
+.btn:hover, button:hover { background-color: #ffb938; cursor: pointer; }
+.btn-light { background-color: white; }
+
+/* ===== ROWS AND CARDS (wrap on small screens) ===== */
+.row { display: flex; flex-direction: row; flex-wrap: wrap; gap: 18px; }
+.card { flex: 1; min-width: 220px; background-color: white; border: 1px solid #dde3ee; border-top: 4px solid #fca311; border-radius: 10px; padding: 18px; text-align: center; }
+.card:hover { border-top-color: #2b4c9b; background-color: #fafcff; }
+.card h3 { margin: 8px 0; color: #14213d; }
+.avatar { width: 60px; height: 60px; margin: 0 auto; background-color: #2b4c9b; color: white; border-radius: 50%; font-size: 26px; font-weight: bold; line-height: 60px; }
+.tag { background-color: #e8eefc; color: #2b4c9b; font-size: 13px; font-weight: bold; padding: 3px 10px; border-radius: 12px; }
+.big { font-size: 30px; font-weight: bold; color: #2b4c9b; margin: 0; }
+
+/* ===== FORMS ===== */
+form { background-color: white; border: 1px solid #dde3ee; border-radius: 10px; padding: 22px; }
+label { display: block; font-weight: bold; margin: 12px 0 4px 0; }
+input, select, textarea { width: 100%; padding: 10px; border: 1px solid #aab4c8; border-radius: 6px; font-size: 16px; font-family: Arial, sans-serif; }
+input[type="radio"] { width: auto; }
+.msg { font-weight: bold; min-height: 24px; }
+.filters { display: flex; flex-direction: row; flex-wrap: wrap; gap: 12px; margin-bottom: 14px; }
+.filters input, .filters select { flex: 1; min-width: 180px; }
+
+/* ===== TABLES, LISTS, PROGRESS BAR ===== */
+table { width: 100%; border: 1px solid #dde3ee; background-color: white; }
+th { background-color: #14213d; color: white; padding: 8px; }
+td { padding: 8px; border-bottom: 1px solid #dde3ee; text-align: center; }
+dt { font-weight: bold; color: #2b4c9b; margin-top: 14px; }
+dd { margin: 4px 0 0 0; }
+.bar { background-color: #dde3ee; border-radius: 10px; }
+.fill { background-color: #fca311; height: 16px; border-radius: 10px; width: 0%; }
+
+/* ===== FOOTER ===== */
+footer { background-color: #14213d; color: white; text-align: center; padding: 22px 15px; }
+footer a { color: #fca311; margin: 0 8px; text-decoration: none; }
+footer p { margin: 6px 0; }

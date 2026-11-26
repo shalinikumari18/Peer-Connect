@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Find Tutors | Peer-Connect</title>
+<link rel="stylesheet" href="style (1).css">
+</head>
+<body>
+<!-- HEADER: same menu on every page so all pages link to each other -->
+<header>
+<a class="logo" href="index (1).html">Peer<span>Connect</span></a>
+<nav>
+<a href="index (1).html">Home</a>
+<a class="active" href="tutors.html">Find Tutors</a>
+<a href="about.html">About Us</a>
+<a href="book.html">Request Session</a>
+<a href="dashboard.html">Dashboard</a>
+<a href="faqs.html">FAQs</a>
+<a href="register.html">Join/Login</a>
+</nav>
+</header>
+<section>
+<div class="wrap">
+<h2>Find Tutors</h2>
+<p class="sub">Search by name or topic, and filter by subject</p>
+<div class="filters">
+<input type="text" id="search" placeholder="Search name, language, department..." onkeyup="filterTutors()">
+<select id="subjectFilter" onchange="filterTutors()">
+<option value="">All subjects</option>
+<option>Python</option><option>Mathematics</option><option>Physics</option><option>Communication</option>
+</select>
+</div>
+<p id="resultCount"><b>6 tutors found</b></p>
+<div class="row">
+<div class="card tutor-card"><div class="avatar">A</div><h3>Aman Sharma</h3><span class="tag">Python</span><p>CSE, 3rd year &middot; English, Hindi<br>Rating 4.8 &#9733; &middot; Online</p><a class="btn" href="book.html">Request</a></div>
+<div class="card tutor-card"><div class="avatar">S</div><h3>Simran Kaur</h3><span class="tag">Mathematics</span><p>ECE, 2nd year &middot; English, Punjabi<br>Rating 4.6 &#9733; &middot; Online/Offline</p><a class="btn" href="book.html">Request</a></div>
+<div class="card tutor-card"><div class="avatar">N</div><h3>Neha Verma</h3><span class="tag">Physics</span><p>EE, 3rd year &middot; English, Hindi<br>Rating 4.9 &#9733; &middot; Offline</p><a class="btn" href="book.html">Request</a></div>
+<div class="card tutor-card"><div class="avatar">R</div><h3>Rohit Singh</h3><span class="tag">Python</span><p>IT, 2nd year &middot; English, Punjabi<br>Rating 4.2 &#9733; &middot; Online</p><a class="btn" href="book.html">Request</a></div>
+<div class="card tutor-card"><div class="avatar">K</div><h3>Karan Gill</h3><span class="tag">Mathematics</span><p>ME, 4th year &middot; English, Hindi<br>Rating 4.0 &#9733; &middot; Online/Offline</p><a class="btn" href="book.html">Request</a></div>
+<div class="card tutor-card"><div class="avatar">P</div><h3>Pooja Mehra</h3><span class="tag">Communication</span><p>MBA, 1st year &middot; English, Hindi<br>Rating 4.7 &#9733; &middot; Online</p><a class="btn" href="book.html">Request</a></div>
+</div>
+</div>
+</section>
+<footer>
+<p><b>Peer-Connect</b> &mdash; Everyone Can Teach. Everyone Can Learn.</p>
+<p><a href="index (1).html">Home</a><a href="tutors.html">Tutors</a><a href="about.html">About</a><a href="faqs.html">FAQs</a><a href="register.html">Register</a></p>
+<p><small>&copy; 2026 Peer-Connect. LEARN &harr; TEACH &harr; CONNECT &harr; GROW</small></p>
+</footer>
+<script src="script (1).js"></script>
+</body></html>

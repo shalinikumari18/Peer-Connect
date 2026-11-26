@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Join/Login | Peer-Connect</title>
+<link rel="stylesheet" href="style (1).css">
+</head>
+<body>
+<!-- HEADER: same menu on every page so all pages link to each other -->
+<header>
+<a class="logo" href="index (1).html">Peer<span>Connect</span></a>
+<nav>
+<a href="index (1).html">Home</a>
+<a href="tutors.html">Find Tutors</a>
+<a href="about.html">About Us</a>
+<a href="book.html">Request Session</a>
+<a href="dashboard.html">Dashboard</a>
+<a href="faqs.html">FAQs</a>
+<a class="active" href="register.html">Join/Login</a>
+</nav>
+</header>
+<section>
+<div class="wrap">
+<h2>Join Peer-Connect</h2>
+<p class="sub">Create your student account</p>
+<form>
+<label for="jName">Full Name</label>
+<input type="text" id="jName" placeholder="Your name">
+<label for="jEmail">College Email</label>
+<input type="email" id="jEmail" placeholder="you@college.edu">
+<label for="jPass">Password</label>
+<input type="password" id="jPass" placeholder="At least 6 characters">
+<label for="jRole">I want to</label>
+<select id="jRole"><option>Learn</option><option>Teach</option><option>Both (Skill Exchange)</option></select>
+<button type="button" onclick="doJoin()">Create Account</button>
+<p class="msg" id="joinMsg"></p>
+</form>
+</div>
+</section>
+<section class="grey">
+<div class="wrap">
+<h2>Already a member? Login</h2>
+<form>
+<label for="lEmail">Email</label>
+<input type="email" id="lEmail" placeholder="you@college.edu">
+<label for="lPass">Password</label>
+<input type="password" id="lPass" placeholder="Your password">
+<button type="button" onclick="doLogin()">Login</button>
+<p class="msg" id="loginMsg"></p>
+<p>After login, go to your <a href="dashboard.html">Dashboard</a>.</p>
+</form>
+</div>
+</section>
+<script src="script (1).js"></script>
+<footer>
+<p><b>Peer-Connect</b> &mdash; Everyone Can Teach. Everyone Can Learn.</p>
+<p><a href="index (1).html">Home</a><a href="tutors.html">Tutors</a><a href="about.html">About</a><a href="faqs.html">FAQs</a><a href="register.html">Register</a></p>
+<p><small>&copy; 2026 Peer-Connect. LEARN &harr; TEACH &harr; CONNECT &harr; GROW</small></p>
+</footer>
+</body></html>

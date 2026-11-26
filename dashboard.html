@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard | Peer-Connect</title>
+<link rel="stylesheet" href="style (1).css">
+</head>
+<body>
+<!-- HEADER: same menu on every page so all pages link to each other -->
+<header>
+<a class="logo" href="index (1).html">Peer<span>Connect</span></a>
+<nav>
+<a href="index (1).html">Home</a>
+<a href="tutors.html">Find Tutors</a>
+<a href="about.html">About Us</a>
+<a href="book.html">Request Session</a>
+<a class="active" href="dashboard.html">Dashboard</a>
+<a href="faqs.html">FAQs</a>
+<a href="register.html">Join/Login</a>
+</nav>
+</header>
+<section>
+<div class="wrap">
+<h2 id="welcome">Welcome back!</h2>
+<p class="sub" id="unread"></p>
+<div class="row">
+<div class="card"><p class="big" id="xp">0 XP</p><p id="level"></p></div>
+<div class="card"><p class="big" id="streak">0</p><p>Keep it going!</p></div>
+<div class="card"><p class="big" id="learn">0</p><p id="teach"></p></div>
+</div>
+<h3>Progress to next level</h3>
+<div class="bar"><div class="fill" id="xpFill"></div></div>
+</div>
+</section>
+<section class="grey">
+<div class="wrap">
+<h2>Upcoming Sessions</h2>
+<p class="sub">Your next learning and teaching sessions</p>
+<table>
+<tr><th>Date</th><th>Tutor</th><th>Subject</th><th>Status</th></tr>
+<tr><td>28 Nov</td><td>Aman Sharma</td><td>Python</td><td>Accepted</td></tr>
+<tr><td>30 Nov</td><td>Simran Kaur</td><td>Mathematics</td><td>Pending</td></tr>
+<tr><td>2 Dec</td><td>Neha Verma</td><td>Physics</td><td>Accepted</td></tr>
+</table>
+</div>
+</section>
+<section>
+<div class="wrap">
+<h2>Leaderboard</h2>
+<p class="sub">Top contributors this week</p>
+<table>
+<tr><th>Rank</th><th>Student</th><th>XP</th><th>Badge</th></tr>
+<tr><td>1</td><td>Neha Verma</td><td>820</td><td>Tutor of the Week</td></tr>
+<tr><td>2</td><td>Aman Sharma</td><td>760</td><td>Top Helper</td></tr>
+<tr><td>3</td><td>Pooja Mehra</td><td>610</td><td>Rising Star</td></tr>
+</table>
+<p style="text-align:center"><a class="btn" href="tutors.html">Find a Tutor</a><a class="btn btn-light" href="book.html">New Request</a></p>
+</div>
+</section>
+<script src="script (1).js"></script>
+<script>showDashboard();</script>
+<footer>
+<p><b>Peer-Connect</b> &mdash; Everyone Can Teach. Everyone Can Learn.</p>
+<p><a href="index (1).html">Home</a><a href="tutors.html">Tutors</a><a href="about.html">About</a><a href="faqs.html">FAQs</a><a href="register.html">Register</a></p>
+<p><small>&copy; 2026 Peer-Connect. LEARN &harr; TEACH &harr; CONNECT &harr; GROW</small></p>
+</footer>
+</body></html>

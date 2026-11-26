@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Request Session | Peer-Connect</title>
+<link rel="stylesheet" href="style (1).css">
+</head>
+<body>
+<!-- HEADER: same menu on every page so all pages link to each other -->
+<header>
+<a class="logo" href="index (1).html">Peer<span>Connect</span></a>
+<nav>
+<a href="index (1).html">Home</a>
+<a href="tutors.html">Find Tutors</a>
+<a href="about.html">About Us</a>
+<a class="active" href="book.html">Request Session</a>
+<a href="dashboard.html">Dashboard</a>
+<a href="faqs.html">FAQs</a>
+<a href="register.html">Join/Login</a>
+</nav>
+</header>
+<section>
+<div class="wrap">
+<h2>Request a Session</h2>
+<p class="sub">Tell the tutor what you need help with</p>
+<form>
+<label for="bName">Your Name</label>
+<input type="text" id="bName" placeholder="Enter your name">
+<label for="bTutor">Tutor</label>
+<select id="bTutor"><option>Aman Sharma (Python)</option><option>Simran Kaur (Mathematics)</option><option>Neha Verma (Physics)</option><option>Rohit Singh (Python)</option><option>Karan Gill (Mathematics)</option><option>Pooja Mehra (Communication)</option></select>
+<label for="bDate">Date</label>
+<input type="date" id="bDate">
+<label for="bTime">Time</label>
+<input type="time" id="bTime">
+<label>Session Mode</label>
+<div><input type="radio" name="mode" id="online" checked> Online &nbsp; <input type="radio" name="mode" id="offline"> Offline</div>
+<label for="bText">What do you need help with?</label>
+<textarea id="bText" rows="4" placeholder="Describe the topic or difficulty"></textarea>
+<button type="button" onclick="submitBooking()">Send Request</button>
+<p class="msg" id="bookMsg"></p>
+</form>
+</div>
+</section>
+<footer>
+<p><b>Peer-Connect</b> &mdash; Everyone Can Teach. Everyone Can Learn.</p>
+<p><a href="index (1).html">Home</a><a href="tutors.html">Tutors</a><a href="about.html">About</a><a href="faqs.html">FAQs</a><a href="register.html">Register</a></p>
+<p><small>&copy; 2026 Peer-Connect. LEARN &harr; TEACH &harr; CONNECT &harr; GROW</small></p>
+</footer>
+<script src="script (1).js"></script>
+</body></html>
